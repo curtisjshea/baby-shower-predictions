@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shower Predictions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Baby Shower Predictions</h1>
+    
+    <!-- Prediction form will go here -->
+
+<form id="prediction-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" required>
+
+    <label for="weight">Weight (lbs):</label>
+    <input type="number" id="weight" step="0.1" required>
+
+    <label for="sex">Sex:</label>
+    <select id="sex" required>
+        <option value="" disabled selected>Select Sex</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <label for="eye-color">Eye Color:</label>
+    <input type="text" id="eye-color" required>
+
+    <button type="submit">Submit Prediction</button>
+</form>
+
+
+    <!-- List of predictions will go here -->
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+<body>
+    <h1>Baby Shower Predictions</h1>
+    <div class="container">
+        <!-- Prediction form -->
+        <form id="prediction-form">
+            <!-- ... -->
+        </form>
+    </div>
+
+    <!-- Add the Firebase and app.js scripts below -->
+</body>
+
+
+</body>
+</html>
